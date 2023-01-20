@@ -53,6 +53,6 @@ echo "waiting for cloudflare argo address"
 sleep 10
 argo=$(cat argo.log | grep trycloudflare.com | awk 'NR==2{print}' | awk -F// '{print $2}' | awk '{print $1}')
 clear
-url='vless://ffffffff-ffff-ffff-ffff-ffffffffffff@45.64.22.6:443?encryption=none&security=tls&type=ws&host='$argo'&path=%2fup2ws#argo'
+url='vless://ffffffff-ffff-ffff-ffff-ffffffffffff@45.64.22.6:443?encryption=none&security=tls&type=ws&host='$argo'&path=%2fshansir2023#argo'
 echo $url | qrencode -t UTF8
 echo $url
